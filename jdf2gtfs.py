@@ -7,6 +7,9 @@ import shutil
 import urllib.request as request
 from contextlib import closing
 import csv
+
+from pandas._libs.tslibs.offsets import Easter, Day
+from pandas.tseries.holiday import AbstractHolidayCalendar, Holiday
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import func
